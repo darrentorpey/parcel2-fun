@@ -1,6 +1,6 @@
 # Demo: Parcel 2 dev server + Docker file watching issue
 
-Parcel 2 running in a standard Node.js Docker container does not detect changes in files on a mounted volume when they are updated from the host and thus does not rebulid the project it is serving. This prevents us from effectively using Parcel 2 in development.
+Parcel 2 running in a standard Node.js Docker container does not detect changes in files on a mounted volume when they are updated from the host and thus does not rebuild the project it is serving. This prevents us from effectively using Parcel 2 in development.
 
 This repo offers a is a minimal-setup reproduction of the issue to help debug and assess possible workarounds or fixes.
 

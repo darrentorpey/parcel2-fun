@@ -8,10 +8,11 @@ To see the problem:
 
 Requirement: Docker
 
-1. Run `docker compose up --build`
-2. Edit a file in `src` directory from the host machine
+1. Clone this repo and `cd` into its directory
+2. Run `docker compose up --build`
+3. Edit a file in `src` directory from the host machine
     - Ensure you're not using an editor that uses "safe write" ([reference](https://parceljs.org/features/development#safe-write))
-3. Observe that Parcel 2 does not see the file change and does not rebuild the project
+4. Observe that Parcel 2 does not see the file change and does not rebuild the project
 
 Note that Parcel 2's server *will* see the file change and will successfully rebuild if you `touch` the file from within the container itself. To see this, make the change as above and notice that Parcel doesn't rebuild, then run:
 
